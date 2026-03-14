@@ -1,4 +1,4 @@
-# React Native
+# React Native Expo
 
 This is my implementation from the course [React Native Expo: Aplicaciones nativas para IOS y Android ](https://www.udemy.com/course/react-native-expo/) provided by [Fernando Herrera](https://fernando-herrera.com/).
 
