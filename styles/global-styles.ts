@@ -11,4 +11,10 @@ export const globalStyles = StyleSheet.create({
     justifyContent: "flex-end",
     paddingBottom: 20,
   },
+  row: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginBottom: 18,
+    paddingHorizontal: 10,
+  },
 });
