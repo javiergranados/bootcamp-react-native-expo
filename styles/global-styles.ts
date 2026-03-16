@@ -11,16 +11,4 @@ export const globalStyles = StyleSheet.create({
     justifyContent: "flex-end",
     paddingBottom: 20,
   },
-  mainResult: {
-    color: Colors.textPrimary,
-    textAlign: "right",
-    fontSize: 70,
-    fontWeight: "400",
-  },
-  subResult: {
-    color: Colors.textSecondary,
-    textAlign: "right",
-    fontSize: 40,
-    fontWeight: "300",
-  },
 });
