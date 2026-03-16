@@ -1,4 +1,5 @@
 import { Colors } from "@/constants/theme";
+import * as Haptics from "expo-haptics";
 import { Pressable, StyleSheet, Text } from "react-native";
 
 const BACKGROUND_COLOR_MAP = {
@@ -17,7 +18,7 @@ interface Props {
   label: string;
   isZero?: boolean;
   variant?: "numbers" | "operators" | "controls";
-  onPress?: () => void;
+  onPress: () => void;
 }
 
 export function Button({
@@ -37,7 +38,10 @@ export function Button({
         isZero && styles.buttonZero,
         pressed && { opacity: 0.8 },
       ]}
-      onPress={onPress}
+      onPress={() => {
+        Haptics.selectionAsync();
+        onPress();
+      }}
     >
       <Text style={[styles.buttonText, { color: textColor }]}>{label}</Text>
     </Pressable>
